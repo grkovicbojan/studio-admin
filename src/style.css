@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .brand {
@@ -179,14 +180,61 @@ h2 {
   font-weight: 500;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .nav-links {
-    gap: 0.7rem;
-    font-size: 0.8rem;
-    overflow-x: auto;
+    gap: 0.85rem;
   }
 
   .hero {
-    padding: 3.3rem 1rem;
+    padding: 3.5rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 0.7rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0.2rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+    border-radius: 20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    padding: 0.7rem;
+  }
+
+  .hero {
+    padding: 2.4rem 0.85rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
